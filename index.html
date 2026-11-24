@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Artifact Origin Detector</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <main class="container">
+       <h1>🏺 Artifact Origin Detector</h1>
+       <p class="description">Upload a photo of an artifact to predict whether its visual style is Chinese, Egyptian, or Indian.</p>
+       <p class="disclaimer">This is an experimental AI prediction, not a confirmed historical identification.</p>
+       <label class="file-label" for="artifact-upload">Choose or photograph an artifact</label>
+       <input type="file" id="artifact-upload" accept="image/jpeg,image/png,image/webp" capture="environment">
+       <img id="image-preview" alt="Selected artifact preview" hidden>
+       <button id="analyze-btn" type="button">Analyze Artifact</button>
+       <section id="result-box" role="status" aria-live="polite">
+           <span class="result-label">Prediction Results</span>
+           <span id="prediction-text">Waiting for an image...</span>
+       </section>
+   </main>
+   <script src="script.js"></script>
+</body>
+</html>
